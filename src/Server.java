@@ -25,7 +25,6 @@ class SetupServer {
         StartServerClass startServer = new StartServerClass();
         Thread connectionThread = new Thread(startServer);
 
-
         try {
             serverConsole.WriteToConsole("[S] Starting Server");
             serverSocket = new ServerSocket(serverPort);
@@ -51,20 +50,18 @@ class SetupServer {
         System.out.println("stop()");
     }
 
-
-
-    //--------------=-=--=-=-=-=--
-
-
-
     public void setupStreams(){
+
+        ServerDataClass serverDataClass = new ServerDataClass();
+        Thread dataThread = new Thread(serverDataClass);
+
         ServerConsole serverConsole = new ServerConsole();
         try{
             output = new DataOutputStream(connection.getOutputStream());
             input = new DataInputStream(connection.getInputStream());
             output.flush();
             serverConsole.WriteToConsole("[S] Stream Setup For " + connection.getInetAddress() + " Finished");
-
+            dataThread.start();
         }catch(IOException IOE){
             StringWriter errors = new StringWriter();
             IOE.printStackTrace(new PrintWriter(errors));
@@ -108,6 +105,7 @@ class ServerDataClass extends SetupServer implements Runnable{
             try {
                 dataIn = input.readUTF();
                 output.writeUTF(dataIn);
+                serverConsole.WriteToConsole("[IN] " + dataIn);
             }catch(IOException IOE){
                 StringWriter errors = new StringWriter();
                 IOE.printStackTrace(new PrintWriter(errors));
