@@ -3,12 +3,6 @@ import java.net.*;
 
 public class Server extends SetupServer {
 
-    public void StopServer(){
-        if(serverSocket != null){
-            serverSocket = null;
-        }
-    }
-
 }
 
 class SetupServer {
@@ -19,6 +13,8 @@ class SetupServer {
     static DataInputStream input;
 
     public void StartServer(String serverName, int serverPort) throws Exception {
+
+
 
         CreateServer createServer = new CreateServer();
         ServerConsole serverConsole = new ServerConsole();
@@ -75,6 +71,8 @@ class SetupServer {
 class StartServerClass extends SetupServer implements Runnable {
     public void run() {
 
+
+
         ServerConsole serverConsole = new ServerConsole();
         serverConsole.WriteToConsole("[S] Waiting For Connections");
 
@@ -96,6 +94,16 @@ class StartServerClass extends SetupServer implements Runnable {
 }
 
 class ServerDataClass extends SetupServer implements Runnable{
+
+    DataInputStream din;
+    DataOutputStream dout;
+    ServerDataClass[] sdc = new ServerDataClass[6];
+
+    public ServerDataClass(DataOutputStream dout, DataInputStream din){
+        this.dout = dout;
+        this.din = din;
+    }
+
     public void run() {
 
         ServerConsole serverConsole = new ServerConsole();

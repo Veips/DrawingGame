@@ -34,10 +34,10 @@ public class ServerConsole {
 
         frame.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent we) {
-                WriteToConsole("[S] Stopping server...");
-                server.StopServer();
-                WriteToConsole("[S] Server stopped");
-                server.StopServer();
+                //WriteToConsole("[S] Stopping server...");
+                //server.StopServer();
+                //WriteToConsole("[S] Server stopped");
+                //server.StopServer();
                 hide();
             }
         });
