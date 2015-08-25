@@ -1,0 +1,91 @@
+JFDML JFormDesigner: "5.2.2.0.199" Java: "1.8.0_40" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"font": new java.awt.Font( "Segoe UI", 0, 16 )
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "serverIPLabel"
+				"text": "Server IP"
+				"toolTipText": "Server IP and Port"
+				"font": &Font0 new java.awt.Font( "Segoe UI", 0, 16 )
+				"foreground": &Color0 new java.awt.Color( 0, 0, 0, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 10
+				"width": 80
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "usernameLabel"
+				"text": "Username"
+				"toolTipText": "Player name"
+				"font": #Font0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 80
+				"height": 30
+				"x": 10
+				"y": 45
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "serverIPField"
+				"background": &Color1 new java.awt.Color( 231, 231, 231, 255 )
+				"border": &LineBorder0 new javax.swing.border.LineBorder( new java.awt.Color( 215, 215, 215, 255 ), 2, false )
+				"foreground": &Color2 new java.awt.Color( 0, 0, 0, 255 )
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 65536, 16, true )
+				"toolTipText": "IP Address"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 95
+				"y": 10
+				"width": 160
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "usernameField"
+				"background": #Color1
+				"border": #LineBorder0
+				"foreground": #Color2
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 225
+				"height": 30
+				"x": 95
+				"y": 45
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "serverPortField"
+				"background": #Color1
+				"border": #LineBorder0
+				"foreground": #Color2
+				"font": #SwingDerivedFont0
+				"toolTipText": "Port"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 60
+				"height": 30
+				"x": 260
+				"y": 10
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "connectButton"
+				"text": "Connect"
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"background": new java.awt.Color( 204, 204, 204, 255 )
+				"foreground": new java.awt.Color( 0, 0, 0, 255 )
+				"font": new java.awt.Font( "Segoe UI", 0, 16 )
+				"toolTipText": "Connect to server"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 85
+				"width": 310
+				"height": 35
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 330, 130 )
+		} )
+	}
+}

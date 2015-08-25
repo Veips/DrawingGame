@@ -1,0 +1,60 @@
+JFDML JFormDesigner: "5.2.2.0.199" Java: "1.8.0_40" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "createServerFrame"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "serverNameLabel"
+				"text": "Server Name"
+				"font": &Font0 new java.awt.Font( "Segoe UI", 0, 16 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 10
+				"width": 95
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "serverPortLabel"
+				"text": "Server Port"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 95
+				"height": 30
+				"x": 10
+				"y": 45
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "serverNameField"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 110
+				"y": 10
+				"width": 200
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "serverPortField"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 60
+				"height": 30
+				"x": 110
+				"y": 45
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "startServerButton"
+				"text": "Start Server"
+				"font": new java.awt.Font( "Segoe UI", 0, 16 )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 175
+				"y": 45
+				"width": 135
+				"height": 30
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 320, 85 )
+		} )
+	}
+}

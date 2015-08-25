@@ -1,0 +1,59 @@
+JFDML JFormDesigner: "5.2.2.0.199" Java: "1.8.0_40" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "serverConsoleWindow"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "serverOutputLabel"
+				"text": "Server Output"
+				"font": &Font0 new java.awt.Font( "Segoe UI", 0, 16 )
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 10
+				"width": 360
+				"height": 31
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "serverOutputPane"
+					"background": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+					"border": new javax.swing.border.LineBorder( new java.awt.Color( 224, 224, 224, 255 ), 2, false )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 50
+				"width": 360
+				"height": 355
+			} )
+			add( new FormComponent( "javax.swing.JTextPane" ) {
+				name: "connectedClientsPane"
+				"background": #Color0
+				"border": new javax.swing.border.LineBorder( new java.awt.Color( 224, 224, 224, 255 ), 2, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 385
+				"y": 50
+				"width": 210
+				"height": 355
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "connectedClientsLabel"
+				"text": "Connected Clients"
+				"font": #Font0
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 210
+				"height": 31
+				"x": 385
+				"y": 10
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 605, 420 )
+		} )
+	}
+}

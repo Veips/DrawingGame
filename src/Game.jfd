@@ -1,0 +1,214 @@
+JFDML JFormDesigner: "5.2.2.0.199" Java: "1.8.0_40" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "gamePanel"
+			"background": new java.awt.Color( 225, 225, 225, 255 )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "drawArea"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 60
+				"width": 720
+				"height": 520
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "brushSizeLabel"
+				"text": "Brush Size"
+				"font": &Font0 new java.awt.Font( "Segoe UI", 0, 18 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 590
+				"width": 80
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JSlider" ) {
+				name: "brushSizeSlider"
+				"maximum": 60
+				"value": 5
+				"minimum": 1
+				"background": new java.awt.Color( 225, 225, 225, 255 )
+				"foreground": new java.awt.Color( 0, 0, 0, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 110
+				"y": 590
+				"height": 35
+				"width": 200
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "brushSizeIndicatorLabel"
+				"text": "5"
+				"horizontalAlignment": 0
+				"font": new java.awt.Font( "Segoe UI", 0, 18 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 310
+				"y": 590
+				"height": 35
+				"width": 40
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "brushColorLabel"
+				"text": "Brush Color"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 95
+				"height": 35
+				"x": 20
+				"y": 635
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"background": sfield java.awt.Color red
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color red, 10, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 125
+				"y": 635
+				"width": 15
+				"height": 15
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"background": sfield java.awt.Color pink
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color pink, 10, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 15
+				"x": 125
+				"y": 655
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"background": sfield java.awt.Color yellow
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color yellow, 10, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 15
+				"x": 145
+				"y": 655
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"background": sfield java.awt.Color orange
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color orange, 10, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 15
+				"x": 145
+				"y": 635
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button5"
+				"background": sfield java.awt.Color cyan
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color cyan, 10, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 15
+				"x": 185
+				"y": 635
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button6"
+				"background": sfield java.awt.Color green
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color green, 10, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 15
+				"x": 165
+				"y": 635
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button7"
+				"background": sfield java.awt.Color blue
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color blue, 10, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 15
+				"x": 185
+				"y": 655
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button8"
+				"background": sfield java.awt.Color magenta
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color magenta, 10, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 15
+				"x": 165
+				"y": 655
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button9"
+				"background": sfield java.awt.Color darkGray
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color darkGray, 10, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 15
+				"x": 215
+				"y": 655
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button10"
+				"background": sfield java.awt.Color gray
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color gray, 10, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 15
+				"x": 235
+				"y": 635
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button11"
+				"background": sfield java.awt.Color black
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 10, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 15
+				"x": 215
+				"y": 635
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button12"
+				"background": sfield java.awt.Color white
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color white, 10, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 15
+				"x": 235
+				"y": 655
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane3"
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "chatTextField"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 750
+				"y": 590
+				"width": 355
+				"height": 75
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane4"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "chatArea"
+					"focusable": false
+					"editable": false
+					"background": new java.awt.Color( 255, 255, 255, 255 )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 750
+				"y": 200
+				"width": 355
+				"height": 381
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 5 )
+			"size": new java.awt.Dimension( 1115, 680 )
+		} )
+	}
+}
